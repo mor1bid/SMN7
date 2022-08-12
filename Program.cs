@@ -25,7 +25,7 @@ for (int bar = 0; bar < bnum; bar++)
     for (int col = 0; col < cnum; col++) 
     {
         if (col % 2 == 0) { Console.Write($"{Math.Pow(bar + col, 2)}"); }
-        else Console.Write($"{bar + col}");
+        else Console.Write($"{bar + col}" + "");
     }
     Console.WriteLine("");
 }
