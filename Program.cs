@@ -48,9 +48,9 @@ for (int bar = 0; bar < bnum; bar++)
     Console.WriteLine("");
 }
     int plus = 1;
-for (int bar = 0; bar < bnum; bar++) 
+for (int bar = 0; bar < bnum;) 
 {
-    for (int col = 0; bar < bnum; col++) 
+    for (int col = 0; bar < bnum; col++, bar++) 
         sum += col;
 }
 Console.Write(" Сумма главной диагонали равна " + sum);
