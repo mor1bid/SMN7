@@ -8,7 +8,7 @@ for (int bar = 0; bar < bnum; bar++)
 {
     for (int col = 0; col < cnum; col++) 
     {
-        Console.Write($"{bar + col}");
+        Console.Write($"{bar + col}" + "\t");
     }
     Console.WriteLine("");
 }
@@ -24,8 +24,8 @@ for (int bar = 0; bar < bnum; bar++)
 {
     for (int col = 0; col < cnum; col++) 
     {
-        if (col % 2 == 0) { Console.Write($"{Math.Pow(bar + col, 2)}" + " "); }
-        else Console.Write($"{bar + col}" + " ");
+        if (col % 2 == 0) { Console.Write($"{bar + col}" + "(" + $"{Math.Pow(bar + col, 2)}" + ")" + "\t"); }
+        else Console.Write($"{bar + col}" + "\t");
     }
     Console.WriteLine("");
 }
