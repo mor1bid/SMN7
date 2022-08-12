@@ -48,7 +48,7 @@ for (int bar = 0; bar < bnum; bar++)
     Console.WriteLine("");
 }
     int plus = 1;
-for (int bar = 0, col = 0; col <= cnum; bar++, col++) 
+for (int bar = 0, col = 0; col <= bnum; bar++, col++) 
 {
         sum += col;
 }
