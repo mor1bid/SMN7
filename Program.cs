@@ -16,7 +16,7 @@ for (int bar = 0; bar < bnum; bar++)
 
 void Z2()
 {
-Console.WriteLine("48. Введите значения ширины и длины: ");
+Console.WriteLine("49. Введите значения ширины и длины: ");
 int bnum = Convert.ToInt32(Console.ReadLine()), 
     cnum = Convert.ToInt32(Console.ReadLine());
 int [,] table = new int[bnum, cnum];
@@ -24,7 +24,7 @@ for (int bar = 0; bar < bnum; bar++)
 {
     for (int col = 0; col < cnum; col++) 
     {
-        if (bar % 2 == 0) { Console.Write($"{bar + col}" + "(" + $"{Math.Pow(bar + col, 2)}" + ")" + "\t"); }
+        if (bar % 2 != 0) { Console.Write($"{bar + col}" + "(" + $"{Math.Pow(bar + col, 2)}" + ")" + "\t"); }
         else Console.Write($"{bar + col}" + "\t");
     }
     Console.WriteLine("");
