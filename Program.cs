@@ -47,9 +47,10 @@ for (int bar = 0; bar < bnum; bar++)
     }
 }
     int colmin = cnum;
-    for (int bar = 0; bar < bnum; bar++, colmin--) 
+    int plus = 0;
+    for (int bar = 0; bar < bnum; bar++, plus++) 
 {
-    for (int col = 0; col < colmin; col++) 
+    for (int col = 0 + plus; col < colmin; col++) 
     {
         sum += col;
     }
