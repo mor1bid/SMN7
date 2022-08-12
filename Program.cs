@@ -47,14 +47,14 @@ for (int bar = 0; bar < bnum; bar++)
     }
 }
     int plus = 1;
-    for (int bar = 0; bar < bnum; bar++, plus++) 
+for (int bar = 0; bar < bnum; bar++, plus++) 
 {
     for (int col = 0 + plus; col <= plus; col++) 
     {
         sum += col;
     }
 }
-Console.WriteLine("\b\b Сумма главной диагонали равна " + sum);
+Console.Write(" Сумма главной диагонали равна " + sum);
 Console.WriteLine("");
 }
 
