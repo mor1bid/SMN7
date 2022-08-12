@@ -45,6 +45,7 @@ for (int bar = 0; bar < bnum; bar++)
     {
         Console.Write($"{bar + col}" + "\t");
     }
+    Console.WriteLine("");
 }
     int plus = 1;
 for (int bar = 0; bar < bnum; bar++, plus++) 
@@ -53,7 +54,6 @@ for (int bar = 0; bar < bnum; bar++, plus++)
     {
         sum += col;
     }
-Console.WriteLine(" ");
 }
 Console.Write(" Сумма главной диагонали равна " + sum);
 Console.WriteLine(" ");
