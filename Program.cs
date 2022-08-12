@@ -50,7 +50,7 @@ for (int bar = 0; bar < bnum; bar++)
     int plus = 1;
 for (int bar = 0; bar < bnum; bar++) 
 {
-    for (int col = 0; col < cnum; col++) 
+    for (int col = 0; bar < bnum; col++) 
         sum += col;
 }
 Console.Write(" Сумма главной диагонали равна " + sum);
