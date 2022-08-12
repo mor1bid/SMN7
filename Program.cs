@@ -50,7 +50,7 @@ for (int bar = 0; bar < bnum; bar++)
     int plus = 0;
     for (int bar = 0; bar < bnum; bar++, colmin--, plus++) 
 {
-    for (int col = 0 + plus; col < colmin; col++) 
+    for (int col = 0 + plus; col <= plus; col++) 
     {
         sum += col;
     }
