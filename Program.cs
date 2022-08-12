@@ -46,16 +46,15 @@ for (int bar = 0; bar < bnum; bar++)
         Console.Write($"{bar + col}" + "\t");
     }
 }
-    int colmin = cnum;
     int plus = 1;
-    for (int bar = 0; bar < bnum; bar++, colmin--, plus++) 
+    for (int bar = 0; bar < bnum; bar++, plus++) 
 {
     for (int col = 0 + plus; col <= plus; col++) 
     {
         sum += col;
     }
 }
-Console.WriteLine("\t Сумма главной диагонали равна " + sum);
+Console.WriteLine("\b\b Сумма главной диагонали равна " + sum);
 Console.WriteLine("");
 }
 
