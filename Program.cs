@@ -47,7 +47,7 @@ for (int i = 0, bar = 0; bar < bnum; bar++)
 Console.WriteLine("Введите желаемые значения строки и столбца: ");
 int mybar = Convert.ToInt32(Console.ReadLine());
 int mycol = Convert.ToInt32(Console.ReadLine());
-for (int i = 0, bar = 1; bar <= bnum;)
+for (int i = 0, bar = 1; bar <= bnum; bar++)
 {
     if (mybar == bar) 
     {
