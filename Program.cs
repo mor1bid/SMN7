@@ -56,7 +56,7 @@ for (int bar = 1; bar <= bnum;)
     break;
     }
     else if (mybar>bnum || mybar<=0) { Console.WriteLine("Такого элемента нет."); break; }
-    bar++;
+    //bar++;
 }
 }
 
