@@ -26,9 +26,10 @@ int bnum = Convert.ToInt32(Console.ReadLine());
 int cnum = Convert.ToInt32(Console.ReadLine());
 Random ra = new Random();
 int si = bnum*cnum;
+int bar = 0;
 int [,] table = new int[bnum, cnum];
 double [] ray = new double[si]; 
-for (int bar = 0; bar < bnum; bar++) 
+while (bar < bnum) 
 {
     for (int i=0, col = 0; col<cnum; i++, col++)
     {
@@ -39,12 +40,13 @@ for (int bar = 0; bar < bnum; bar++)
             Console.Write(ray[i] + "\t");
         }
     }
+    bar++;
     Console.WriteLine("");
 }
 Console.WriteLine("Введите желаемые значения строки и столбца: ");
 int mybar = Convert.ToInt32(Console.ReadLine());
 int mycol = Convert.ToInt32(Console.ReadLine());
-int bar = 1;
+bar = 1;
 while (bar <= bnum)
 {
     if (bar == mybar) 
