@@ -34,12 +34,12 @@ for (int i=0; i<si; i++)
     }
 double [] ar = new double[si];
 int [,] table = new int[bnum, cnum];
-for (int bar = 0; bar < bnum; bar++) 
+for (int i = 0, bar = 0; bar < bnum; bar++, i++) 
 {
-    for (int i=0, col = 0; col<cnum; i++, col++)
+    for (int col = 0; col<cnum; col++)
     {
         ar[i] = ray[i];
-        Console.Write(ar[i] + "\t" + ar[i+1] + "\t");
+        Console.Write(ar[i] + "\t");
     }
     Console.WriteLine("");
 }
