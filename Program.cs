@@ -47,7 +47,7 @@ Console.WriteLine("Введите желаемые значения строки
 int mybar = Convert.ToInt32(Console.ReadLine());
 int mycol = Convert.ToInt32(Console.ReadLine());
 bar = 1;
-while (bar <= bnum)
+while (bar < bnum)
 {
     if (bar == mybar) 
     {
