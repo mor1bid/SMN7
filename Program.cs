@@ -41,10 +41,10 @@ Console.WriteLine("52.");
 //     Console.WriteLine("");
 // }
 Console.Write("Среднее арифметическое каждого столбца: ");
-for (int i = 0, col = 1; col<=cnum; i++, col++) 
+for (int i = 0, bar = 1; bar<=bnum; bar++) 
 {
     double sum = 0;
-    for (int bar = 1; bar<=bnum; bar++)
+    for (int col = 1; col<=cnum; col++, i++)
     {
         //if (i>0 && ray[i+1] != ray[i])
         Console.Write("(" + ray[i] + ", ");
