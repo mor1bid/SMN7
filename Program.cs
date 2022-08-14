@@ -18,6 +18,7 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     }
     Console.WriteLine("");
 }
+Console.WriteLine();
 Console.WriteLine("50. Введите желаемые значения строки и столбца: ");
 int mybar = Convert.ToInt32(Console.ReadLine());
 int mycol = Convert.ToInt32(Console.ReadLine());
@@ -31,8 +32,8 @@ for (int i = 0, bar = 1; bar<=bnum; bar++)
             { Console.WriteLine("Такого элемента нет."); return; }
         }
 }
-Console.WriteLine("52.");
 Console.WriteLine();
+Console.WriteLine("52.");
 for (int i = 0, bar = 0; bar<bnum; bar++) 
 {
     for (int col = 0; col<cnum; i++, col++)
