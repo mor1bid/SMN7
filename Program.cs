@@ -3,6 +3,8 @@
 Console.WriteLine("47. Введите значения длины и ширины: ");
 int bnum = Convert.ToInt32(Console.ReadLine());
 int cnum = Convert.ToInt32(Console.ReadLine());
+Console.Clear();
+Console.WriteLine();
 Random ra = new Random();
 int si = bnum*cnum;
 double [] ray = new double[si];
@@ -20,6 +22,8 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
 Console.WriteLine("50. Введите желаемые значения строки и столбца: ");
 int mybar = Convert.ToInt32(Console.ReadLine());
 int mycol = Convert.ToInt32(Console.ReadLine());
+Console.Clear();
+Console.WriteLine();
 for (int i = 0, bar = 1; bar<=bnum; bar++)
 {
         for (int col = 1; col<=cnum; i++, col++)
@@ -40,6 +44,7 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     }
     Console.WriteLine("");
 }
+Console.WriteLine();
 Console.WriteLine("Среднее арифметическое каждого столбца: ");
 for (int i = 0, col = 1; col<=cnum; col++, i++) 
 {
