@@ -9,10 +9,10 @@ int [,] table = new int[bnum, cnum];
 double [] ray = new double[si]; 
 for (int bar = 0; bar < bnum; bar++) 
 {
-    for (int i=0, col = 0; i<=si; col++, i++) 
+    for (int i=0, col = 0; col<cnum; col++, i++) 
     {
         //int numa = ra.Next(-10, 11);
-        double numb = Math.Round (ra.NextDouble() * (-10-11)+11, 1);
+        double numb = Math.Round (ra.NextDouble() * (-10.5-11)+11, 1);
         ray[i] = numb;
         Console.Write(ray[i] + "\t");
         // ray[i] = numa;
