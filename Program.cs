@@ -36,7 +36,7 @@ double [] ar = new double[si];
 int [,] table = new int[bnum, cnum];
 for (int i = 0, bar = 0; bar < bnum; bar++, i++) 
 {
-    for (int col = 0; col<cnum; col++)
+    for (int col = 0; col<cnum; i++, col++)
     {
         ar[i] = ray[i];
         Console.Write(ar[i] + "\t");
