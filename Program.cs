@@ -11,7 +11,7 @@ for (int bar = 0; bar < bnum; bar++)
 {
     for (int i=0, col = 0; col<cnum; col++, i++) 
     {
-        int numa = ra.Next(-10, 11);
+        //int numa = ra.Next(-10, 11);
         double numb = Math.Round (ra.NextDouble() * (-10.5-11)+11, 1);
         ray[i] = numb;
         Console.Write(ray[i] + "\t");
