@@ -4,7 +4,7 @@ Console.WriteLine("48. Введите значения ширины и длин�
 int bnum = Convert.ToInt32(Console.ReadLine());
 int cnum = Convert.ToInt32(Console.ReadLine());
 Random ra = new Random();
-int si = ra.Next(bnum+cnum);
+int si = ra.Next(bnum*cnum);
 int [,] table = new int[bnum, cnum];
 double [] ray = new double[si]; 
 for (int bar = 0; bar < bnum; bar++) 
