@@ -32,7 +32,7 @@ for (int bar = 0; bar < bnum; bar++)
 {
     for (int i=0, col = 0; col<cnum; i++, col++)
     {
-        while(i<si) 
+        if(i<si) 
         {
             int num = ra.Next(-10, 11);
             ray[i] = num;
@@ -50,11 +50,8 @@ for (int bar = 1; bar <= bnum; bar++)
     {
     for (int i=si, col = 1; col<=cnum; i--, col++)
     {
-        while(i>0) 
-        {
-            if (col == mycol) { Console.WriteLine(ray[i]); return; }
-            else if (mycol>cnum || mycol<=0) { Console.WriteLine("Такого элемента нет."); break; }
-        }
+        if (col == mycol && i>0) { Console.WriteLine(ray[i]); return; }
+        else if (mycol>cnum || mycol<=0) { Console.WriteLine("Такого элемента нет."); break; }
     }
     }
     else if (mybar>bnum || mybar<=0) { Console.WriteLine("Такого элемента нет."); break; }
