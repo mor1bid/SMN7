@@ -7,7 +7,7 @@ Random ra = new Random();
 int si = bnum*cnum;
 double [] ray = new double[si];
 int [,] table = new int[bnum, cnum];
-for (int i = 0, bar = 0; bar < bnum; bar++) 
+for (int i = 0, bar = 0; bar<bnum; bar++) 
 {
     for (int col = 0; col<cnum; i++, col++)
     {
@@ -20,7 +20,7 @@ for (int i = 0, bar = 0; bar < bnum; bar++)
 Console.WriteLine("50. Введите желаемые значения строки и столбца: ");
 int mybar = Convert.ToInt32(Console.ReadLine());
 int mycol = Convert.ToInt32(Console.ReadLine());
-for (int i = 0, bar = 1; bar <= bnum; bar++)
+for (int i = 0, bar = 1; bar<=bnum; bar++)
 {
         for (int col = 1; col<=cnum; i++, col++)
         {
@@ -29,7 +29,7 @@ for (int i = 0, bar = 1; bar <= bnum; bar++)
             else if (mybar>bnum || mybar<=0) { Console.WriteLine("Такого элемента нет."); break; }
         }
 }
-for (int i = 0, bar = 0; bar < bnum; bar++) 
+for (int i = 0, bar = 0; bar<bnum; bar++) 
 {
     for (int col = 0; col<cnum; i++, col++)
     {
@@ -40,15 +40,14 @@ for (int i = 0, bar = 0; bar < bnum; bar++)
     Console.WriteLine("");
 }
 Console.Write("52. Среднее арифметическое каждого столбца: ");
-for (int i = 0, col = 0; col < cnum; col++, i++) 
+for (int i = 0, col = 0; col<cnum; col++, i++) 
 {
     double sum = 0;
     for (int bar = 0; bar<bnum; bar++)
     {
         sum += ray[i];
-        Console.Write(ray[i] + "\t");
     }
-    Console.Write($"{sum*col} + , ");
+    Console.Write($"{sum*col}" + ", ");
 }
 Console.Write("\b\b");
 }
