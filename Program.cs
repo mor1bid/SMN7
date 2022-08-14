@@ -42,14 +42,15 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     Console.WriteLine("");
 }
 Console.Write("Среднее арифметическое каждого столбца: ");
-for (int i = 0, sum = 0, bar = 0, col = 0; col<cnum; col++, bar++, i++) 
+for (int i = 0, sum = 0, bar = 0, col = 0; col<cnum; bar++, i++) 
 {
     Console.Write("(" + ar[i] + ", ");
     sum += ar[i];
-    Console.Write(") - ");
     if (bar==bnum) 
     {
+        Console.Write(") - ");
         Console.Write($"{sum*bnum}" + ", ");
+        col++;
     }
 }
 Console.Write("\b\b");
