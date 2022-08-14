@@ -43,7 +43,7 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
 Console.Write("52. Среднее арифметическое каждого столбца: ");
 for (int i = 0, sum = 0, bar = 0, col = 0; col<cnum; col++, i++) 
 {
-    Console.Write("(" + ray[i] + ", ");
+    Console.Write("(" + ar[i] + ", ");
     sum += ar[i];
     Console.Write(") - ");
     if (bar==bnum) 
