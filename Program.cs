@@ -41,7 +41,7 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
      Console.WriteLine("");
 }
 Console.Write("52. Среднее арифметическое каждого столбца: ");
-for (int i = 0, sum = 0, bar = 0, col = 0; col<cnum; col++, i++) 
+for (int i = 0, sum = 0, bar = 0, col = 0; col<cnum; col++, bar++, i++) 
 {
     Console.Write("(" + ar[i] + ", ");
     sum += ar[i];
