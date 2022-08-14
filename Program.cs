@@ -25,7 +25,7 @@ Console.WriteLine("48. Введите значения ширины и длин�
 int bnum = Convert.ToInt32(Console.ReadLine());
 int cnum = Convert.ToInt32(Console.ReadLine());
 Random ra = new Random();
-int si = bnum*cnum;
+int si = ra.Next(0, 11);
 double [] ray = new double[si];
 for (int i=0; i<si; i++) 
     {
