@@ -1,6 +1,6 @@
 ﻿void DZ()
 {
-Console.WriteLine("47. Введите значения ширины и длины: ");
+Console.WriteLine("47. Введите значения длины и ширины: ");
 int bnum = Convert.ToInt32(Console.ReadLine());
 int cnum = Convert.ToInt32(Console.ReadLine());
 Random ra = new Random();
@@ -40,10 +40,10 @@ for (int i = 0, bar = 1; bar<=bnum; bar++)
 //     Console.WriteLine("");
 // }
 Console.Write("52. Среднее арифметическое каждого столбца: ");
-for (int col = 0; col<cnum; col++) 
+for (int i = 0, col = 0; col<cnum; col++, i++) 
 {
     double sum = 0;
-    for (int i = 0, bar = 0; bar<bnum; i++, bar++)
+    for (int bar = 0; bar<bnum; bar++)
     {
         Console.Write("(" + ray[i] + ", ");
         sum += ray[i];
