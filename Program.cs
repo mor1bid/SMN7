@@ -22,25 +22,26 @@ int mybar = Convert.ToInt32(Console.ReadLine());
 int mycol = Convert.ToInt32(Console.ReadLine());
 for (int i = 0, bar = 1; bar<=bnum; bar++)
 {
-        for (int col = 1; col<=cnum; i++, col++)
-        {
-            if (mybar == bar && mycol == col) { Console.WriteLine(ray[i]); break; }
-            else if (mycol>cnum || mycol<=0) { Console.WriteLine("Такого элемента нет."); break; }
-            else if (mybar>bnum || mybar<=0) { Console.WriteLine("Такого элемента нет."); break; }
-        }
+    for (int col = 1; col<=cnum; i++, col++)
+    {
+        if (mybar == bar && mycol == col) { Console.WriteLine(ray[i]); break; }
+        else if (mycol>cnum || mycol<=0) { Console.WriteLine("Такого элемента нет."); break; }
+        else if (mybar>bnum || mybar<=0) { Console.WriteLine("Такого элемента нет."); break; }
+    }
 }
 int [] ar = new int[si];
+Console.WriteLine("52.");
 for (int i = 0, bar = 0; bar<bnum; bar++) 
- {
-     for (int col = 0; col<cnum; i++, col++)
-     {
-         int num = ra.Next(-10, 11);
-         ar[i] = num;
-         Console.Write(ar[i] + "\t");
-     }
-     Console.WriteLine("");
+{
+    for (int col = 0; col<cnum; i++, col++)
+    {
+        int num = ra.Next(-10, 11);
+        ar[i] = num;
+        Console.Write(ar[i] + "\t");
+    }
+    Console.WriteLine("");
 }
-Console.Write("52. Среднее арифметическое каждого столбца: ");
+Console.Write("Среднее арифметическое каждого столбца: ");
 for (int i = 0, sum = 0, bar = 0, col = 0; col<cnum; col++, bar++, i++) 
 {
     Console.Write("(" + ar[i] + ", ");
