@@ -45,13 +45,13 @@ for (int bar = 1; bar <= bnum; bar++)
 {
     if (bar == mybar) 
     {
-    for (int i=1, col = 1; col<=cnum; i++, col++) 
+    for (int i=si, col = 1; col<=cnum; i--, col++) 
     {
         if (col == mycol) { Console.WriteLine(ray[i]); return; }
-        else if (mycol>cnum) { Console.WriteLine("Такого элемента нет."); break; }
+        else if (mycol>cnum || mycol<=0) { Console.WriteLine("Такого элемента нет."); break; }
     }
     }
-    else if (mybar>bnum) { Console.WriteLine("Такого элемента нет."); break; }
+    else if (mybar>bnum || mybar<=0) { Console.WriteLine("Такого элемента нет."); break; }
 }
 }
 
