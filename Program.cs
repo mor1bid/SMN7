@@ -41,11 +41,11 @@ for (int bar = 0; bar < bnum; bar++)
 Console.WriteLine("Введите желаемые значения строки и столбца: ");
 int mybar = Convert.ToInt32(Console.ReadLine());
 int mycol = Convert.ToInt32(Console.ReadLine());
-for (int bar = 0; bar < bnum; bar++)
+for (int bar = 1; bar <= bnum; bar++)
 {
     if (bar == mybar) 
     {
-    for (int i=0, col = 0; col<cnum; col++, i++) 
+    for (int i=1, col = 1; col<=cnum; col++, i++) 
     {
         if (col == mycol) { Console.WriteLine(ray[i]); break; }
         else if (mycol>cnum) { Console.WriteLine("Такого элемента нет."); break; }
