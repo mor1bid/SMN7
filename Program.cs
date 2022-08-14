@@ -38,6 +38,7 @@ for (int bar = 0; bar < bnum; bar++)
             ray[i] = num;
             Console.Write(ray[i] + "\t");
         }
+        Console.WriteLine("");
     }
     Console.WriteLine("");
 }
