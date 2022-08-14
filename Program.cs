@@ -52,6 +52,6 @@ for (int i = 0, col = 1; col<=cnum; col++, i++)
     }
     Console.Write($"{sum*bnum}" + ", ");
 }
-Console.Write("\b\b");
+Console.Write("\b\b\b");
 }
 DZ();
