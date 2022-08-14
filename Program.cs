@@ -11,7 +11,7 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
 {
     for (int col = 0; col<cnum; i++, col++)
     {
-        double num = Math.Round (ra.NextDouble() * (-10.5-11)+11, 1);
+        double num = Math.Round (ra.NextDouble() * (-100.5-101)+101, 1);
         ray[i] = num;
         Console.Write(ray[i] + "\t");
     }
@@ -34,7 +34,7 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
 {
     for (int col = 0; col<cnum; i++, col++)
     {
-        int num = ra.Next(-10, 11);
+        int num = ra.Next(-100, 101);
         ray[i] = num;
         Console.Write(ray[i] + "\t");
     }
@@ -50,7 +50,7 @@ for (int i = 0, col = 1; col<=cnum; col++, i++)
         else { sum += ray[i2]; }
         i2 += cnum;
     }
-    Console.Write($"{sum*bnum}" + ", ");
+    Console.WriteLine($"{sum*bnum}" + "\t");
 }
 Console.Write("\b\b" + "");
 }
