@@ -50,7 +50,7 @@ for (int i = 0, bar = 1; bar <= bnum; bar++, i++)
 {
     if (mybar == bar) 
     {
-        for (int col = 1; col<=cnum; i++, col++)
+        for (int col = 1; col<=cnum; col++)
         {
             if (mycol == col) { Console.WriteLine(ray[i]); break; }
             else if (mycol>cnum || mycol<=0) { Console.WriteLine("Такого элемента нет."); break; }
