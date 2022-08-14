@@ -13,7 +13,7 @@ for (int bar = 0; bar < bnum; bar++)
     {
         double numb = Math.Round (ra.NextDouble() * (-10.5-11.5)+11.5, 2);
         ray[i] = numb;
-        Console.WriteLine(ray[i] + "\t");
+        Console.Write(ray[i] + "\t");
     }
     Console.WriteLine("");
 }
