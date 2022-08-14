@@ -4,7 +4,6 @@ Console.WriteLine("47. Введите значения длины и ширин�
 int bnum = Convert.ToInt32(Console.ReadLine());
 int cnum = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
-Console.Clear();
 Random ra = new Random();
 int si = bnum*cnum;
 double [] ray = new double[si];
@@ -23,7 +22,6 @@ Console.WriteLine("50. Введите желаемые значения стро
 int mybar = Convert.ToInt32(Console.ReadLine());
 int mycol = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
-Console.Clear();
 for (int i = 0, bar = 1; bar<=bnum; bar++)
 {
         for (int col = 1; col<=cnum; i++, col++)
@@ -34,6 +32,7 @@ for (int i = 0, bar = 1; bar<=bnum; bar++)
         }
 }
 Console.WriteLine("52.");
+Console.WriteLine();
 for (int i = 0, bar = 0; bar<bnum; bar++) 
 {
     for (int col = 0; col<cnum; i++, col++)
