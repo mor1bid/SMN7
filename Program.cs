@@ -31,14 +31,15 @@ for (int i=0; i<si; i++)
     {
         double num = Math.Round (ra.NextDouble() * (-10.5-11)+11, 1);
         ray[i] = num;
-        Console.Write(ray[i]);
     }
+double [] ar = new double[si];
 int [,] table = new int[bnum, cnum];
 for (int bar = 0; bar < bnum; bar++) 
 {
     for (int i=0, col = 0; col<cnum; i++, col++)
     {
-        Console.Write(ray[i] + "\t");
+        ar[i] = ray[i];
+        Console.Write(ar[i] + "\t");
     }
     Console.WriteLine("");
 }
