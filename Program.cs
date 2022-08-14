@@ -25,7 +25,7 @@ Console.WriteLine("48. Введите значения ширины и длин�
 int bnum = Convert.ToInt32(Console.ReadLine());
 int cnum = Convert.ToInt32(Console.ReadLine());
 Random ra = new Random();
-int si = bnum*cnum;
+int si = 11;
 int [,] table = new int[bnum, cnum];
 double [] ray = new double[si]; 
 for (int bar = 0; bar < bnum; bar++) 
@@ -48,7 +48,7 @@ for (int bar = 1; bar <= bnum;)
 {
     if (mybar == bar) 
     {
-        for (int i=si-1, col = 1; col<=cnum; i--, col++)
+        for (int i=0, col = 1; col<=cnum; i++, col++)
         {
             if (mycol == col) { Console.WriteLine(ray[i]); break; }
             else if (mycol>cnum || mycol<=0) { Console.WriteLine("Такого элемента нет."); break; }
