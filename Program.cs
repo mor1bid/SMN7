@@ -53,8 +53,8 @@ for (int i = 0, bar = 1; bar <= bnum; bar++)
     {
         for (int col = 1; col<=cnum; i++, col++)
         {
-            if (mycol == col) { Console.WriteLine(ray[i]); break; }
-            else if (col>=cnum) bar++;
+            if (mybar == bar && mycol == col) { Console.WriteLine(ray[i]); break; }
+            //else if (col>=cnum) bar++;
             else if (mycol>cnum || mycol<=0) { Console.WriteLine("Такого элемента нет."); break; }
         }
     break;
