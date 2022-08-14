@@ -39,7 +39,7 @@ for (int bar = 0; bar < bnum; bar++)
     for (int i=0, col = 0; col<cnum; i++, col++)
     {
         ar[i] = ray[i];
-        Console.Write(ar[i] + "\t");
+        Console.Write(ar[i] + "\t" + ar[i+1] + "\t");
     }
     Console.WriteLine("");
 }
