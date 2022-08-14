@@ -1,4 +1,4 @@
-﻿void DZ1i2()
+﻿void DZ()
 {
 Console.WriteLine("47. Введите значения ширины и длины: ");
 int bnum = Convert.ToInt32(Console.ReadLine());
@@ -29,5 +29,26 @@ for (int i = 0, bar = 1; bar <= bnum; bar++)
             else if (mybar>bnum || mybar<=0) { Console.WriteLine("Такого элемента нет."); break; }
         }
 }
+for (int i = 0, bar = 0; bar < bnum; bar++) 
+{
+    for (int col = 0; col<cnum; i++, col++)
+    {
+        int num = ra.Next(-10, 11);
+        ray[i] = num;
+        Console.Write(ray[i] + "\t");
+    }
+    Console.WriteLine("");
 }
-DZ1i2();
+Console.WriteLine("52. Среднее арифметическое каждого столбца:");
+for (int i = 0, col = 0; col < cnum; col++, i++) 
+{
+    double sum = 0;
+    for (int bar = 0; bar<bnum; bar++)
+    {
+        sum += ray[i];
+        Console.Write(ray[i] + "\t");
+    }
+    Console.WriteLine($"{sum*col}");
+}
+}
+DZ();
