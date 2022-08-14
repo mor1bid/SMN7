@@ -29,22 +29,22 @@ for (int i = 0, bar = 1; bar<=bnum; bar++)
             else if (mybar>bnum || mybar<=0) { Console.WriteLine("Такого элемента нет."); break; }
         }
 }
-// for (int i = 0, bar = 0; bar<bnum; bar++) 
-// {
-//     for (int col = 0; col<cnum; i++, col++)
-//     {
-//         int num = ra.Next(-10, 11);
-//         ray[i] = num;
-//         Console.Write(ray[i] + "\t");
-//     }
-//     Console.WriteLine("");
-// }
+int [] ar = new int[si];
+for (int i = 0, bar = 0; bar<bnum; bar++) 
+ {
+     for (int col = 0; col<cnum; i++, col++)
+     {
+         int num = ra.Next(-10, 11);
+         ar[i] = num;
+         Console.Write(ar[i] + "\t");
+     }
+     Console.WriteLine("");
+}
 Console.Write("52. Среднее арифметическое каждого столбца: ");
-for (int i = 0, bar = 0, col = 0; col<cnum; col++, i++) 
+for (int i = 0, sum = 0, bar = 0, col = 0; col<cnum; col++, i++) 
 {
-    double sum = 0;
     Console.Write("(" + ray[i] + ", ");
-    sum += ray[i];
+    sum += ar[i];
     Console.Write(") - ");
     if (bar==bnum) 
     {
