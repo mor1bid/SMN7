@@ -40,13 +40,13 @@ for (int i = 0, bar = 1; bar<=bnum; bar++)
 //     Console.WriteLine("");
 // }
 Console.Write("52. Среднее арифметическое каждого столбца: ");
-for (int i = 0, col = 0; col<cnum; col++, i++) 
+for (int col = 0; col<cnum; col++) 
 {
     double sum = 0;
-    for (int bar = 0; bar<bnum; i++, bar++)
+    for (int i = 0, bar = 0; bar<bnum; i++, bar++)
     {
-        Console.Write("(" + ray[i+bnum] + ", ");
-        sum += ray[i+bnum];
+        Console.Write("(" + ray[i] + ", ");
+        sum += ray[i];
     }
     Console.Write(") - ");
     Console.Write($"{sum*bnum}" + ", ");
