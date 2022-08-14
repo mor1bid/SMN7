@@ -44,7 +44,8 @@ for (int bar = 0; bar < bnum; bar++)
 Console.WriteLine("Введите желаемые значения строки и столбца: ");
 int mybar = Convert.ToInt32(Console.ReadLine());
 int mycol = Convert.ToInt32(Console.ReadLine());
-for (int bar = 1; bar <= bnum; bar++)
+int bar = 1;
+while (bar <= bnum)
 {
     if (bar == mybar) 
     {
@@ -56,6 +57,7 @@ for (int bar = 1; bar <= bnum; bar++)
     break;
     }
     else if (mybar>bnum || mybar<=0) { Console.WriteLine("Такого элемента нет."); break; }
+    else bar++;
 }
 }
 
