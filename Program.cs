@@ -39,7 +39,7 @@ for (int i = 0, bar = 0; bar < bnum; bar++)
     }
     Console.WriteLine("");
 }
-Console.WriteLine("52. Среднее арифметическое каждого столбца:");
+Console.Write("52. Среднее арифметическое каждого столбца: ");
 for (int i = 0, col = 0; col < cnum; col++, i++) 
 {
     double sum = 0;
@@ -48,7 +48,8 @@ for (int i = 0, col = 0; col < cnum; col++, i++)
         sum += ray[i];
         Console.Write(ray[i] + "\t");
     }
-    Console.WriteLine($"{sum*col}");
+    Console.Write($"{sum*col} + , ");
 }
+Console.Write("\b\b");
 }
 DZ();
