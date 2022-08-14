@@ -53,7 +53,7 @@ for (int i = 0, col = 1; col<=cnum; col++, i++)
         sum += ray[i2];
         i2 += cnum;
     }
-    Console.Write($"{sum/bnum}" + "\t");
+    Console.Write($"{Math.Round(sum/bnum, 1)}" + "\t");
 }
 Console.Write("\b\b" + "");
 }
