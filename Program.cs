@@ -45,9 +45,9 @@ for (int bar = 0; bar < bnum; bar++)
 {
     if (bar == mybar) 
     {
-    for (int i=0, col = 0; col<cnum; col++, i++) 
+    for (int i=0, col = 0; col<cnum; col++) 
     {
-        if (col == mycol) { Console.WriteLine(ray[i]); break; }
+        if (col == mycol) { Console.WriteLine(col); break; }
         else if (mycol>cnum) { Console.WriteLine("Такого элемента нет."); break; }
     }
     }
