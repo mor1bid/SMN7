@@ -46,8 +46,7 @@ for (int i = 0, col = 1; col<=cnum; col++, i++)
     double sum = 0;
     for (int i2 = i, bar = 1; bar<=bnum; bar++)
     {
-        if (i2>0) { sum += ray[i2]; }
-        else { sum += ray[i2]; }
+        sum += ray[i2];
         i2 += cnum;
     }
     Console.Write($"{sum*bnum}" + "\t");
