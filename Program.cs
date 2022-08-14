@@ -43,9 +43,9 @@ Console.Write("52. Среднее арифметическое каждого с
 for (int i = 0, col = 0; col<cnum; col++, i++) 
 {
     double sum = 0;
-    for (int bar = 0; bar<bnum; bar++, i++)
+    for (int i2 = i, bar = 0; bar<bnum; bar++)
     {
-        Console.Write("(" + ray[i] + ", ");
+        Console.Write("(" + ray[i2] + ", ");
         sum += ray[i];
     }
     Console.Write(") - ");
