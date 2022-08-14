@@ -45,8 +45,10 @@ for (int i = 0, col = 0; col<cnum; col++, i++)
     double sum = 0;
     for (int bar = 0; bar<bnum; bar++)
     {
+        Console.Write("(" + ray[i] + ", ");
         sum += ray[i];
     }
+    Console.Write(") - ");
     Console.Write($"{sum*cnum}" + ", ");
 }
 Console.Write("\b\b");
