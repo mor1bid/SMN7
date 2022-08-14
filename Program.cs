@@ -40,7 +40,7 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     }
     Console.WriteLine("");
 }
-Console.Write("Среднее арифметическое каждого столбца: ");
+Console.WriteLine("Среднее арифметическое каждого столбца: ");
 for (int i = 0, col = 1; col<=cnum; col++, i++) 
 {
     double sum = 0;
@@ -50,7 +50,7 @@ for (int i = 0, col = 1; col<=cnum; col++, i++)
         else { sum += ray[i2]; }
         i2 += cnum;
     }
-    Console.WriteLine($"{sum*bnum}" + "\t");
+    Console.Write($"{sum*bnum}" + "\t");
 }
 Console.Write("\b\b" + "");
 }
