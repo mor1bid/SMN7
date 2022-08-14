@@ -30,7 +30,7 @@ int [,] table = new int[bnum, cnum];
 double [] ray = new double[si]; 
 for (int bar = 0; bar < bnum; bar++) 
 {
-    for (int i=0, col = 0; col<cnum; col++, i++) 
+    for (int i=0, col = 0; col<cnum; i++, col++) 
     {
         int num = ra.Next(-10, 11);
         ray[i] = num;
@@ -45,7 +45,7 @@ for (int bar = 1; bar <= bnum; bar++)
 {
     if (bar == mybar) 
     {
-    for (int i=1, col = 1; col<=cnum; col++, i++) 
+    for (int i=1, col = 1; col<=cnum; i++, col++) 
     {
         if (col == mycol) { Console.WriteLine(ray[i]); return; }
         else if (mycol>cnum) { Console.WriteLine("Такого элемента нет."); break; }
