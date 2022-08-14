@@ -48,11 +48,11 @@ for (int bar = 0; bar < bnum; bar++)
     for (int i=0, col = 0; col<cnum; col++, i++) 
     {
         if (col == mycol)
-        Console.WriteLine(col);
-        else if (mycol>cnum) { Console.WriteLine("Такого элемента нет."); }
+        Console.WriteLine(ray[i]);
+        else if (mycol>cnum) { Console.WriteLine("Такого элемента нет."); break; }
     }
     }
-    else if (mybar>bnum) { Console.WriteLine("Такого элемента нет."); }
+    else if (mybar>bnum) { Console.WriteLine("Такого элемента нет."); break; }
 }
 }
 
