@@ -25,8 +25,8 @@ for (int i = 0, bar = 1; bar<=bnum; bar++)
         for (int col = 1; col<=cnum; i++, col++)
         {
             if (mybar == bar && mycol == col) { Console.WriteLine(ray[i]); break; }
-            else if (mycol>cnum || mycol<=0) { Console.WriteLine("Такого элемента нет."); break; }
-            else if (mybar>bnum || mybar<=0) { Console.WriteLine("Такого элемента нет."); break; }
+            else if (mycol>cnum || mycol<=0) { Console.WriteLine("Такого элемента нет."); return; }
+            else if (mybar>bnum || mybar<=0) { Console.WriteLine("Такого элемента нет."); return; }
         }
 }
 Console.WriteLine("52.");
