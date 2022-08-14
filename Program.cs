@@ -26,10 +26,9 @@ int bnum = Convert.ToInt32(Console.ReadLine());
 int cnum = Convert.ToInt32(Console.ReadLine());
 Random ra = new Random();
 int si = bnum*cnum;
-int bar = 0;
 int [,] table = new int[bnum, cnum];
 double [] ray = new double[si]; 
-while (bar < bnum) 
+for (int bar = 0; bar < bnum; bar++) 
 {
     for (int i=0, col = 0; col<cnum; i++, col++)
     {
@@ -40,26 +39,23 @@ while (bar < bnum)
             Console.Write(ray[i] + "\t");
         }
     }
-    bar++;
     Console.WriteLine("");
 }
 Console.WriteLine("Введите желаемые значения строки и столбца: ");
 int mybar = Convert.ToInt32(Console.ReadLine());
 int mycol = Convert.ToInt32(Console.ReadLine());
-bar = 1;
-while (bar < bnum)
+for (int bar = 1; bar < bnum; bar++)
 {
-    if (bar == mybar) 
+    if (mybar == bar) 
     {
     for (int i=0, col = 1; col<=cnum; i++, col++)
     {
-        if (col == mycol) { Console.WriteLine(ray[i]); break; }
+        if (mycol == col) { Console.WriteLine(ray[i]); break; }
         else if (mycol>cnum || mycol<=0) { Console.WriteLine("Такого элемента нет."); break; }
     }
     break;
     }
     else if (mybar>bnum || mybar<=0) { Console.WriteLine("Такого элемента нет."); break; }
-    else bar++;
 }
 }
 
