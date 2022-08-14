@@ -26,14 +26,17 @@ int bnum = Convert.ToInt32(Console.ReadLine());
 int cnum = Convert.ToInt32(Console.ReadLine());
 Random ra = new Random();
 int si = bnum*cnum;
+double [] ray = new double[si];
+for (int i=0; i<si; i++) 
+    {
+        double num = Math.Round (ra.NextDouble() * (-10.5-11)+11, 1);
+        ray[i] = num;
+    }
 int [,] table = new int[bnum, cnum];
-double [] ray = new double[si]; 
 for (int bar = 0; bar < bnum; bar++) 
 {
     for (int i=0, col = 0; col<cnum; i++, col++)
     {
-        double num = Math.Round (ra.NextDouble() * (-10.5-11)+11, 1);
-        ray[i] = num;
         Console.Write(ray[i] + "\t");
     }
     Console.WriteLine("");
@@ -45,7 +48,7 @@ for (int bar = 1; bar <= bnum; bar++)
 {
     if (mybar == bar) 
     {
-        for (int i=-10, col = 1; col<=cnum; i++, col++)
+        for (int i=0, col = 1; col<=cnum; i++, col++)
         {
             if (mycol == col) { Console.WriteLine(ray[i]); break; }
             else if (mycol>cnum || mycol<=0) { Console.WriteLine("Такого элемента нет."); break; }
