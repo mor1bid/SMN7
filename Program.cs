@@ -44,11 +44,11 @@ Console.Write("Среднее арифметическое каждого сто
 for (int i = 0, col = 1; col<=cnum; col++, i++) 
 {
     double sum = 0;
-    for (int bar = 1; bar<=bnum; bar++)
+    for (int i2 = cnum, bar = 1; bar<=bnum; bar++)
     {
-        Console.Write("(" + ray[i] + ", ");
-        if (i>0) { sum += cnum; }
-        else sum += ray[i];
+        if (i>0) { sum += ray[i2]; Console.Write("(" + ray[i2] + ", "); }
+        else { sum += ray[i]; Console.Write("(" + ray[i] + ", "); }
+        i2 += cnum;
     }
     Console.Write(") - ");
     Console.Write($"{sum*bnum}" + ", ");
