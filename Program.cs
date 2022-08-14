@@ -47,7 +47,7 @@ for (int i = 0, col = 0; col<cnum; col++, i++)
     {
         sum += ray[i];
     }
-    Console.Write($"{sum*bnum}" + ", ");
+    Console.Write($"{sum*cnum}" + ", ");
 }
 Console.Write("\b\b");
 }
