@@ -25,12 +25,13 @@ Console.WriteLine("48. Введите значения ширины и длин�
 int bnum = Convert.ToInt32(Console.ReadLine());
 int cnum = Convert.ToInt32(Console.ReadLine());
 Random ra = new Random();
-int si = ra.Next(0, 11);
+int si = bnum*cnum;
 double [] ray = new double[si];
 for (int i=0; i<si; i++) 
     {
         double num = Math.Round (ra.NextDouble() * (-10.5-11)+11, 1);
         ray[i] = num;
+        Console.Write(ray[i]);
     }
 int [,] table = new int[bnum, cnum];
 for (int bar = 0; bar < bnum; bar++) 
